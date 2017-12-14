@@ -50,6 +50,11 @@ An exhaustive list of features, documentation, design hierarchy, details about t
 
 The ER Diagram can also be found on the link given above or can be viewed [here](https://drive.google.com/open?id=1Tn2fBR9IjLP8dlv6svrc4aEvryrYcI3G).
 
+## Description of the various folders
+- /net-banking : Contains the source code of the website
+    - /net-banking/images : Contains various images and icon vectors used as resources in the website
+    - /net-banking/fonts : Contains various fonts(.ttf files) used in the website
+
 ## Screenshots (more can be found [here](https://drive.google.com/open?id=1bLLNyEiVGoWgHDfOehGooYSAZUNtj85F))
 ![](https://drive.google.com/uc?id=1XAImOcjlkVbGv3OVcLtfZJKIG4jIh9D_)
 
