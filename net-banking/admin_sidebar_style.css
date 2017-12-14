@@ -1,0 +1,80 @@
+.sidenav {
+    width: 256px;
+    background-color: #eee;
+    height: 90vh;
+    float: left;
+    overflow-y: auto;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.sidenav a {
+    font-family: OpenSans-Regular;
+    font-size: 19px;
+    color: #212121;
+    display: block;
+    padding: 22px 16px;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    background-color: #ddd;
+}
+
+.sidenav a[id="label"] {
+    font-family: OpenSans-Bold;
+    font-size: 22px;
+    color: #212121;
+    display: block;
+    padding: 11px;
+    text-decoration: none;
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+}
+
+.sidenav a[id="label"]:hover {
+    background-color: transparent;
+}
+
+.sidenav a.active {
+    background-color: #ccc;
+}
+
+/* Sticky Sidebar */
+.sidenav-fixed {
+    height: auto;
+    top: 53px;
+    z-index: 100;
+    bottom: 0;
+    position: fixed;
+}
+
+.sidenav a[id="closebtn"] {
+    display: none;
+}
+
+@media screen and (max-width: 855px) {
+    .sidenav {
+        height: 100vh;
+        width: 0;
+        margin-top: -53px;
+        z-index: 100;
+        top: 131px;
+        background-color: #eee;
+        overflow-x: hidden;
+        transition: 0.5s;
+        box-shadow: 3px 3px 20px #000000;
+    }
+
+    .sidenav a[id="closebtn"] {
+        font-family: OpenSans-Regular;
+        font-size: 19px;
+        color: #212121;
+        display: block;
+        margin-left: 200px;
+    }
+
+    .sidenav.sidenav-fixed.responsive {
+        top: 53px;
+        z-index: 100;
+    }
+}

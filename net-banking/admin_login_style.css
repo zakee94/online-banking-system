@@ -1,0 +1,96 @@
+@import url("fonts.css");
+
+body {
+    background-color: #E0E0E0;
+}
+
+h2 {
+    font-family: Roboto-Regular;
+    color: #f44336;
+}
+
+b {
+    color: #1565C0;
+    font-family: Roboto-Regular;
+    margin-left: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    font-family: Roboto-Regular;
+    color: black;
+    font-size: 24px;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 1px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+/* Set a style for all buttons */
+button {
+    font-family: Roboto-Regular;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    background-color: #f44336;
+}
+
+.flex-container-1 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAFAFA;
+    box-shadow: 5px 5px 2px #888888;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.flex-item {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.flex-container-2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAFAFA;
+    box-shadow: 5px 5px 2px #888888;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-container-1 {width: 100%}
+    .flex-container-2 {width: 100%}
+}

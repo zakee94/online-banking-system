@@ -1,0 +1,342 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 256px;
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.search-bar-wrapper {
+    height: 100px;
+}
+
+.search-bar-wrapper .search-bar {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 256px;
+    position: relative;
+    width: auto;
+    height: 100px;
+    flex-direction: column;
+    background-color: #448AFF;
+    box-shadow: 0 8px 8px -6px black;
+    overflow: hidden;
+}
+
+label[id="sort"] {
+    display: block;
+    float: left;
+    color: #212121;
+    font-family: OpenSans-Regular;
+    font-size: 26px;
+    background-color: white;
+    border: 3px solid #212121;
+    border-right: 0;
+    margin: 12px;
+    margin-right: 0px;
+    height: 45px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+select {
+    font-family: OpenSans-Regular;
+    color: #212121;
+    font-size: 24px;
+    background: url("images/down_arrow.png") 96% / 15% no-repeat #eee;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    border: 3px solid #212121;
+    border-left: 0;
+    margin: 12px;
+    margin-left: 0px;
+    height: 56px;
+    width: 115%;
+}
+
+.flex-item-search-bar {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+/* Used to make the search-bar sticky */
+.search-bar-wrapper .search-bar-fixed {
+    width: 100%;
+    top: 53px;
+    bottom: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+.fi-search-bar-fixed {
+    position: relative;
+    left: -128px;
+}
+
+@media screen and (max-width: 400px) {
+    select {
+        width: 100%;
+    }
+
+    label[id="sort"] {
+        background: url("images/sort.png") no-repeat ;
+        background-color: white;
+        margin-right: -50px;
+
+        /* Hide the text. */
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    button[id="search"] {
+        background: url("images/filter.png") no-repeat ;
+        background-color: white;
+        margin-right: -40px;
+
+        /* Hide the text. */
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.flex-container-bb {
+    display: -webkit-flex;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 27px;
+}
+
+button[id="search"] {
+    font-family: OpenSans-Regular;
+    color: #212121;
+    font-size: 26px;
+    background-color: white;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 12px;
+    padding-top: 5px;
+    padding-bottom: 45px;
+    border: 3px solid #212121;
+}
+
+/* Add a hover effect for buttons */
+button[id="search"]:hover {
+    background-color: #BDBDBD;
+}
+
+/* Full-width input fields */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #448AFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    color: black;
+}
+
+label {
+    display: block;
+    float: left;
+    color: #212121;
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+}
+
+/* Set a style for all buttons */
+button[id="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-family: OpenSans-Bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 40%;
+    margin-top: 5%;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #888888;
+    border-radius: 3px;
+}
+
+button[id="submit"]:hover {
+    box-shadow: 5px 5px 20px #888888;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin-right: -20px;
+    margin-top: -5px;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+.duration-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.date-container {
+    width: 150px;
+}
+
+h1[id="filter"] {
+    color: #212121;
+    font-family: OpenSans-Light;
+}
+
+p[id="filter"] {
+    color: #212121;
+    margin-top: -25px;
+    border-bottom: 3px solid #212121;
+    font-family: OpenSans-Regular;
+    font-size: 20px;
+}
+
+
+p[id="minus"] {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #FAFAFA;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 3px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+
+/*-----------------------------------------------------*/
+@media screen and (max-width: 855px) {
+    .flex-container, .search-bar-wrapper .search-bar {
+        margin-left: auto;
+    }
+}
+
+#transactions {
+    font-family: OpenSans-Regular;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    #transactions {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    #transactions {
+        width: 85%;
+    }
+}
+
+#transactions td, #transactions th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#transactions tr:nth-child(even){background-color: #f2f2f2;}
+
+#transactions tr:hover {background-color: #ddd;}
+
+#transactions th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+p[id="none"] {
+    margin: auto;
+    font-size: 40px;
+    color: #212121;
+    font-family: Roboto-Regular;
+}
