@@ -26,15 +26,15 @@ coded from ground-up straight from scratch.
 ## How to build/use
 Setup an environment which supports web development like <b>LAMP</b> on <b>Linux</b> systems OR install <b>WampServer/XAMPP</b> or anything similar on <b>Windows</b>.
 
-Copy the folder [net-banking]() or the files in it to the location of the localhost. For example "/var/www/html", the loaction of localhost in Ubuntu.
+Copy the folder [net-banking](https://github.com/zakee94/online-banking-system/tree/master/net-banking) or the files in it to the location of the localhost. For example "/var/www/html", the loaction of localhost in Ubuntu.
 
-Import the [net_banking.sql]() database into your MySQL setup.
+Import the [net_banking.sql](https://github.com/zakee94/online-banking-system/blob/master/net_banking.sql) database into your MySQL setup.
 
-Edit the file [connect.php]() and give proper username and password of your MySQL setup.
+Edit the file [connect.php](https://github.com/zakee94/online-banking-system/blob/master/net-banking/connect.php) and give proper username and password of your MySQL setup.
 
 Open a browser and test wether the setup works or not by visiting the home page. Type "localhost/home.php" as the URL in the browser to visit the home page.
 
-All the passwords and the usernames of both the admin and the customer can be found in the database i.e. in the file [net_banking.sql]().
+All the passwords and the usernames of both the admin and the customer can be found in the database i.e. in the file [net_banking.sql](https://github.com/zakee94/online-banking-system/blob/master/net_banking.sql).
 
 However some important usernames and passwords are provided below :
 * Username of admin is "admin" & password is "password123".
